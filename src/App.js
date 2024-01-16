@@ -5,11 +5,11 @@ import Shop from "./Pages/Shop";
 import ShopCategory from "./Pages/ShopCategory";
 import Product from "./Pages/Product";
 import LoginSignup from "./Pages/LoginSignup.jsx";
-import Bucket from "./Pages/Bucket.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import men_banner from "./Components/Assests/banner_mens.png";
 import kid_banner from "./Components/Assests/banner_kids.png";
 import women_banner from "./Components/Assests/banner_women.png";
+import Cart from "./Pages/Cart.jsx";
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
           <Route path="/product" element={<Product />}>
             <Route path=":productId" element={<Product />} />
           </Route>
-          <Route path="/cart" element={<Bucket />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
         <Footer />
